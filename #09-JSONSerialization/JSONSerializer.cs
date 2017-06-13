@@ -20,8 +20,7 @@ public class JSONSerializer
 		else if(typeof(T) == typeof(float[])) { return ToJsonFloatArray(data as float[]); }
 		else if(typeof(T) == typeof(Dictionary<string, string>))
 		{
-			//return ToJsonStringStringDictionary(data as Dictionary<string, string>);
-			return ToJson(data as Dictionary<string, string>);
+			return ToJsonStringStringDictionary(data as Dictionary<string, string>);
 		}
 		else if(typeof(T) == typeof(Dictionary<string, int>))
 		{
@@ -162,18 +161,6 @@ public class JSONSerializer
 	}
 
 	private static string ToJsonStringStringDictionary(Dictionary<string, string> dictionary)
-	{
-		List<StringStringDictionary> dictionaryItemsList = new List<StringStringDictionary>();
-		foreach(KeyValuePair<string, string> kvp in dictionary)
-		{
-			dictionaryItemsList.Add( new StringStringDictionary(){ key = kvp.Key, value = kvp.Value } );
-		}
-
-		StringStringDictionaryArray dictionaryArray = new StringStringDictionaryArray(){ items = dictionaryItemsList.ToArray() };
-		return JsonUtility.ToJson(dictionaryArray);
-	}
-
-	private static string ToJson(Dictionary<string, string> dictionary)
 	{
 		List<StringStringDictionary> dictionaryItemsList = new List<StringStringDictionary>();
 		foreach(KeyValuePair<string, string> kvp in dictionary)
