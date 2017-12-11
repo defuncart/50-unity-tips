@@ -1,0 +1,10 @@
+﻿/*
+ *	Written by James Leahy. (c) 2017 DeFunc Art.
+ *	https://github.com/defuncart/
+ */
+using UnityEngine;
+
+/// <summary>The #SCRIPTNAME# class.</summary>
+public class #SCRIPTNAME# : MonoBehaviour
+{
+}

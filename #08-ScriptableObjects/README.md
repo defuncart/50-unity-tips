@@ -28,7 +28,7 @@ To turn this scriptable object into an asset, we could write our own editor scri
 
 which adds the menu item LevelData to the create menu.
 
-![](http://i.imgur.com/mb8zWro.png)
+![](images/scriptableObjects1.png)
 
 I don't fully understand *order* but from what I've tested, 1 is up top, 100 is above *Scene* and 1000 is below *Legacy*.
 

@@ -2,7 +2,7 @@
 
 To publish on Google Play, one needs to sign their app with a keystone signature file. Various aliases (i.e. users) can be authorized to use this file, each with their own password. In the Android Publishing section, we can select the keystone and alias, and enter their respective passwords.
 
-![](http://www.technoreply.com/wp-content/uploads/2015/10/02-create-keystore.png)
+![](images/preloadMobileSinging1.png)
 
 Eachtime that a Unity project loads, the developer must re-enter these passwords before building an APK. Wouldn't it be nice if we could avoid this? Editor script to the rescue!
 

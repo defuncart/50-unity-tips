@@ -1,5 +1,6 @@
 ﻿/*
  *	Written by James Leahy. (c) 2017 DeFunc Art.
+ *	https://github.com/defuncart/
  */
 #if UNITY_EDITOR
 using UnityEditor;

@@ -2,7 +2,7 @@
 
 You are probably familiar with the UI Text component in which text can be added to a UI canvas.
 
-![](https://68.media.tumblr.com/c193aecb494967540030d513878b31a8/tumblr_inline_oqgnqwB98e1raxrd9_540.png)
+![](images/richText1.png)
 
 What is not so apparent is that this component supports rich text.
 
@@ -14,11 +14,11 @@ text.text = "<size=100>This</size> is <color=green>green</color>,
 <size=50>and</size> this is <color=#FF0000>red</color>. <b>bold</b>, <i>italic</i>";
 ```
 
-![](https://68.media.tumblr.com/8ecb17bdc5d576738438a7c2ec3ae8df/tumblr_inline_oqgog8L4Oq1raxrd9_540.png)
+![](images/richText2.png)
 
 Even *Debug.Log* supports these markup tags which can be useful when reporting warnings and errors.
 
-![](https://68.media.tumblr.com/9b25cc87f6930a28967ea1eda51b0c61/tumblr_inline_oqgo2bHeCO1raxrd9_540.png)
+![](images/richText3.png)
 
 For more information see the [Unity documentation](https://docs.unity3d.com/Manual/StyledText.html).
 
@@ -57,4 +57,4 @@ Debug.Log( "This is my message".SetBoldForWords(1, 2) );
 Debug.Log( "This is my message".SetItalicsForWords(0, 3) );
 ```
 
-![](https://68.media.tumblr.com/57f6847fcb772cbd10dd2326d4665bc0/tumblr_inline_oqk1e1XWCH1raxrd9_540.png)
+![](images/richText4.png)

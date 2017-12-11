@@ -2,7 +2,7 @@
 
 On Startup, a Unity game will display the splash screen (if enabled) before loading the first scene. However, if you launch the game on iOS, you will notice the following bluescreen before the splash screen/first scene.
 
-<img src="https://i.imgur.com/XuUQht6.png" width="200px"/>
+![](images/iOSLaunchScreen1.png)
 
 This is an *iOS Launch Screen*, a screen that appears instantly when an iOS app lauches. As every app must supply a launch screen, when building an iOS Xcode project, Unity will supply a default as seen above.
 
@@ -10,7 +10,7 @@ This is an *iOS Launch Screen*, a screen that appears instantly when an iOS app 
 
 So now that we know what a launch screen is, wouldn't it be nice to supply something better suited to the splash screen/first scene? This can be easily achieved in **Player Settings -> iOS -> Splash Screen**
 
-![](https://i.imgur.com/oD6gShK.png)
+![](images/iOSLaunchScreen2.png)
 
 There are two options: **1)** Supply static images of different sizes for different devices (iOS7+) or **2)** Generate an XIB file which is adapted to each device screen size (iOS8+).
 
@@ -18,7 +18,7 @@ In the launch screen seen above, Unity automatically creates iPhone and iPad XIB
 
 For a simple, single-colored launch screen with no text or images, either of the three options will suffice, however I personally prefer to supply a custom XIB created in Xcode as **1)** The file size is smaller and **2)** Unity's created XIB uses a constrained UIImage which is unnecessary as the base UIView's background color can be assigned.
 
-<img src="https://i.imgur.com/xCy9c1h.png" width="200px"/>
+![](images/iOSLaunchScreen3.png)
 
 Amazingly I have seen the default Unity launch screen in games with more than a million downloads! A custom launch screen will not only look aesthetically better, it will give the impression that the app is loading faster, good for older devices. Simply
 * design a launch screen that’s as identical to the splash screen/first scene as possible
